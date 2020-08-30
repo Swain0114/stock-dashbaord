@@ -28,9 +28,9 @@ TIMEOUT = 86400
 
 @cache.memoize(timeout=TIMEOUT)
 def query_data():
-    # df = pd.read_csv('../../data/cleaned-data(20200301).csv')
+    # df = pd.read_csv('/Users/swain/Desktop/AWS/serverless-stock/data/cleaned-data(20200830).csv')
     df = pd.read_csv(
-        'https://serverless-stocks.s3.amazonaws.com/stockinfos/cleaned_data/cleaned-data(20200301).csv')
+        'https://serverless-stocks.s3.amazonaws.com/stockinfos/cleaned_data/cleaned-data(20200830).csv')
     # df = pd.read_json(
     # 'https://serverless-stocks.s3.amazonaws.com/stockinfos/cleaned_data/2020-03-01(success)')
     df['trade_volume_shared'] = ['{:,}'.format(
