@@ -16,7 +16,7 @@ cfn-flip==1.2.2
 chardet==3.0.4
 Click==7.0
 colorama==0.3.9
-cryptography==2.8
+cryptography==3.2
 dash==1.8.0
 dash-core-components==1.7.0
 dash-html-components==1.0.2
